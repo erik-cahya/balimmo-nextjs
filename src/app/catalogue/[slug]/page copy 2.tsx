@@ -9,8 +9,8 @@ export function generateStaticParams() {
 }
 
 const CatalogueDetail = ({ params }: { params: Promise<{ slug: string }>}) => {
-    const {variable} = use(params);
-    return <h1>Halaman untuk {variable}</h1>;
+    const {slug} = use(params);
+    return <h1>Halaman untuk {slug}</h1>;
 };
 
 export default CatalogueDetail;
