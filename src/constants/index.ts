@@ -1,0 +1,182 @@
+// NAVIGATION
+export const NAV_LINKS = [
+  { href: '/', key: 'accueil', label: 'Accueil' },
+  { href: '/terrains', key: 'terrains', label: 'Terrains', title: 'Terrains Disponibles' },
+  { href: '/catalogue', key: 'catalogue', label: 'Catalogue', title: 'Notre Catalogue' },
+  { href: '/investissement_partage', key: 'investissement', label: 'Investissement', title: 'Investissement Partagé' },
+  { href: '/services', key: 'nos-services', label: 'Services', title: 'Nos Services'},
+  { href: '/contact', key: 'contact', label: 'Contact', title: 'Prendre RDV'},
+];
+
+// FITURES
+export const FITURES = [
+  { 
+    id: 1,
+    image: '/image/fiture1.png',
+    title: 'Investissement partagé à partir de 25K€',
+    description: 'Devenez copropriétaire à Bali dès 25K€, avec une rentabilité très attractive !',
+    button: 'Investissez dès maintenant',
+    href: '/investissement_partage'
+  },
+  { 
+    id: 2,
+    image: '/image/fiture2.png',
+    title: 'Accompagnement <br> de A à Z',
+    description: 'Accompagnement complet de la conception à la conciergerie de votre projet immobilier.',
+    button: 'Découvrez notre expertise',
+    href: '/nos-services'
+  },
+  { 
+    id: 3,
+    image: '/image/fiture3.png',
+    title: 'Qualités de constructions INVEST / CONFORT',
+    description: 'Choisissez entre les finitions INVEST ou CONFORT pour votre villa clé en main.',
+    button: 'Explorez nos options',
+    href: '/catalogue'
+  },
+  { 
+    id: 4,
+    image: '/image/fiture4.png',
+    title: 'Projet sur-mesure, Atypique, Bungalow, Villa, Guest house',
+    description: 'Créez votre projet de rêve sur-mesure, adapté à vos besoins à Bali.',
+    button: 'Prenez rendez-vous',
+    href: '/contact'
+  },
+]
+
+export const SERVICES = [
+  { 
+    id: 1,
+    image: '/image/services/Legal.png',
+    title: 'Gestion',
+    secondtitle: 'legale',
+    titleServices: '<span class="text-primary">La gestion légale</span> de votre propriété, pour vous assurer un investissement en toute sécurité.',
+    list: '<li>Création de votre société PT PMA</li><li>Gestion comptabilité, avocat, et notaire</li><li>Sécurité juridique complète à Bali</li>',
+  },
+  { 
+    id: 2,
+    image: '/image/services/Recherche.png',
+    title: 'Prospection',
+    secondtitle: 'terrain',
+    titleServices: `<span class="text-primary">La prospection de terrains</span>, pour vous aider à trouver l'emplacement idéal correspondant à vos attentes.`,
+    list: '<li>Prospection sur-mesure avec notre équipe locale</li><li>Collaboration avec 8 partenaires à travers Bali</li><li>Accès aux meilleurs terrains en temps réel</li>',
+  },
+  { 
+    id: 3,
+    image: '/image/services/Architecture.png',
+    title: 'Design',
+    titleServices: `<span class="text-primary">L'architecture et la construction</span>, en veillant à ce que chaque détail soit conforme à vos désirs et aux normes locales.`,
+    list: '<li>Conception architecturale sur-mesure</li><li>Choix détaillé du style et des matériaux</li><li>Adaptation à vos idées ou à nos réalisations précédentes</li>',
+  },
+  { 
+    id: 4,
+    image: '/image/services/Construction.png',
+    title: 'Construction',
+    titleServices: '<span class="text-primary">Construction</span>',
+    list: '<li>Livraison garantie en 12 mois pour une villa de 2 chambres</li><li>Plan de paiement flexible en 6 étapes</li><li>Qualité et suivi de chantier quotidien</li>',
+  },
+  { 
+    id: 5,
+    image: '/image/services/Ameublement.png',
+    title: 'Ameublement',
+    titleServices: `<span class="text-primary">L’ameublement</span>, afin que votre villa soit à la fois esthétique et fonctionnelle`,
+    list: '<li>Sélection parmi 3 packs : INVEST, CONFORT, PREMIUM</li><li>Mobilier personnalisé selon vos goûts</li><li>Qualité locale et matériaux durables</li>',
+  },
+  { 
+    id: 6,
+    image: '/image/services/Locative.png',
+    title: 'Management',
+    secondtitle: 'de votre villa',
+    titleServices: `<span class="text-primary">Le management</span>  de votre bien, pour maximiser votre rendement et garantir son entretien `,
+    list: '<li>Gestion complète avec BALIMMO VILLA MANAGEMENT</li><li>Statut Superhost Airbnb inclus</li><li>Service tout-en-un pour une tranquillité totale</li>',
+  },
+]
+
+export const REALISATIONS = [
+  { 
+    id: 1,
+    slug: '/catalogue/villa-nanu',
+    image: '/image/villa/Nanu/img1.jpg',
+    name: 'Nanu',
+    roi: '20%',
+    rentabilite: '12%',
+    location: 'Canggu, Badung, Bali',
+    chambres: '2',
+    salles: '2',
+    terrain: '80',
+    mois: '12',
+    price: '115 000',
+  },
+  { 
+    id: 2,
+    slug: '/catalogue/villa-ruby',
+    image: '/image/villa/Ruby/img1.jpg',
+    name: 'Ruby',
+    roi: '20%',
+    rentabilite: '12%',
+    location: 'Canggu, Badung, Bali',
+    chambres: '2',
+    salles: '2',
+    terrain: '106',
+    mois: '12',
+    price: '149 000',
+  },
+  { 
+    id: 3,
+    slug: '/catalogue/villa-terataibiru',
+    image: '/image/villa/Teratai/img1.jpg',
+    name: 'Teratai Biru',
+    roi: '20%',
+    rentabilite: '12%',
+    location: 'Canggu, Badung, Bali',
+    chambres: '2',
+    salles: '2',
+    terrain: '106',
+    mois: '12',
+    price: '149 000',
+  },
+  { 
+    id: 4,
+    slug: '/catalogue/villa-namsoon',
+    image: '/image/villa/Nam/img1.jpg',
+    name: 'Nam Soon',
+    roi: '21%',
+    rentabilite: '12%',
+    location: 'Kerobokan, Badung, Bali',
+    chambres: '3',
+    salles: '3',
+    terrain: '147',
+    mois: '12',
+    price: '209 000',
+  },
+  { 
+    id: 5,
+    slug: '/catalogue/villa-tirta',
+    image: '/image/villa/Tirta/img1.jpg',
+    name: 'Tirta',
+    roi: '23%',
+    rentabilite: '13%',
+    location: 'Nyanyi, Tabanan, Bali',
+    chambres: '6',
+    salles: '6',
+    terrain: '215',
+    mois: '12',
+    price: '279 000',
+  },
+  { 
+    id: 6,
+    slug: '/catalogue/villa-panung',
+    image: '/image/villa/Panung/img1.jpg',
+    name: 'Panung',
+    roi: '22%',
+    rentabilite: '13%',
+    location: 'Pererenan, Badung, Bali',
+    chambres: '4',
+    salles: '4',
+    terrain: '225',
+    mois: '12',
+    price: '299 000',
+  },
+
+]
+

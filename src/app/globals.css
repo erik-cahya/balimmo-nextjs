@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body, h1{
+  font-family: "Poppins", sans-serif;
+}
+
+h5,p,button, ul, a{
+  font-family: "Asap", sans-serif;
+}
+
+@layer utilities {
+  b{
+    @apply font-medium
+  }
+  .bg-position-fixed {
+    @apply bg-no-repeat bg-cover bg-center bg-fixed
+  }
+  .btn_fitures {
+    @apply border-primary border bg-primary text-white text-xs font-medium text-center px-4 py-2 hover:bg-transparent hover:text-white hover:border-white transition-all
+  }
+  .btn_catalogue {
+    @apply border-primary border bg-primary text-white text-xs font-medium text-center px-3 py-2 hover:bg-transparent hover:text-primary hover:border-primary transition-all
+  }
+  .btn_primary {
+    @apply w-fit m-auto border-primary border bg-primary text-white md:text-base text-sm font-medium text-center md:px-8 sm:py-3 px-3 py-4 hover:bg-transparent hover:text-primary hover:border-primary transition-all
+  }
+  .btn_terrain {
+    @apply border-primary border bg-primary text-white text-sm font-medium text-center px-3 py-2 hover:bg-transparent hover:text-primary hover:border-primary transition-all
+  }
+  .btn_calculate {
+    @apply w-full m-auto border-secondary border bg-secondary text-white md:text-base text-sm font-medium text-center md:px-8 sm:py-3 px-3 py-4 hover:bg-transparent hover:text-primary hover:border-primary transition-all
+  }
+  .btn_whatsapp {
+    @apply w-full m-auto border-primary border bg-primary text-white fill-secondary md:text-base text-sm font-medium text-center md:px-8 sm:py-3 px-3 py-4 hover:fill-white hover:bg-[#49AD39] hover:border-[#49AD39] transition-all
+  }
+  .small-badge{
+    @apply text-xs p-2
+  }
+  .big-badge{
+    @apply xl:text-lg text-xs py-3 px-8
+  }
+
+  .button-calculate:nth-child(2){
+    @apply bg-[#49AD39]/10 border-t-4 border-[#49AD39]
+  }
+  .button-calculate:nth-child(3){
+    @apply bg-[#4CA1F0]/10 border-t-4 border-[#4CA1F0]
+  }
+  .button-calculate:nth-child(4){
+    @apply bg-[#C5B357]/10 border-t-4 border-[#C5B357]
+  }
+}
+
+.gtranslate_wrapper select{
+  outline: none;
+  border-radius: .65rem;
+  padding: 8px 20px;
+  background-color: #C5B258;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 860px){
+  .gt_selector option{
+      font-size: .65rem;
+  }
+  .gtranslate_wrapper select{
+    padding: 8px 10px;
+  }
+}
+
+.swiper{
+  padding: 0rem 0rem 4rem 0rem !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50%;
+  background: #292940;
+  color: #FFF !important;
+  top: var(--swiper-navigation-top-offset, 43%) !important;
+} 
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: .85rem !important;
+  font-weight: bold;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{left: 0 !important}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{right: 0 !important;}
+
+.swiper-pagination-bullet-active{
+  background: #292940 !important;
+}
+.swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  bottom: 0 !important;
+  top: auto !important;
+  margin: 2em;
+  width: 96% !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: #292940 !important;
+}
+
+@media screen and (min-width: 1200px){
+  .swiper{
+    padding: 0rem 2rem 4rem 2rem !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 1.2rem !important;
+  }
+}
+
