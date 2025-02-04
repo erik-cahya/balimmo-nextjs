@@ -1,3 +1,5 @@
+import { use } from "react";
+
 export function generateStaticParams() {
   return [
     { slug: "book" },
@@ -6,8 +8,9 @@ export function generateStaticParams() {
   ];
 }
 
-const CatalogueDetail = ({ params }: { params: { slug: string } }) => {
-  return <h1>Halaman untuk {params.slug}</h1>;
+const CatalogueDetail = ({ params }: { params: Promise<{ slug: string }>}) => {
+    const {variable} = use(params);
+    return <h1>Halaman untuk {variable}</h1>;
 };
 
 export default CatalogueDetail;
