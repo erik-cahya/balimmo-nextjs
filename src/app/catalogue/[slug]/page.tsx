@@ -9,11 +9,12 @@ export async function generateStaticParams() {
   }));
 }
 
+// Tipe Params yang diharapkan oleh Next.js
 type Params = {
   slug: string;
 };
 
-export default async function CatalogueDetail({ params }: { params: Params }) {
+export default function CatalogueDetail({ params }: { params: Params }) {
   const { slug } = params;
 
   const catalogue = CATALOGUE.find((item) => item.slug === slug);
