@@ -12,7 +12,7 @@ import Video from "@/components/Video";
 export default function Home() {
   return (
     <>
-      {/* <HomeBanner />
+      <HomeBanner />
       <Video />
       <Services />
       <Realisations />
@@ -20,8 +20,8 @@ export default function Home() {
       <OurTeam />
       <TerrainShowCase />
       <Articles />
-      <Contact /> */}
-      <Test />
+      <Contact />
+      {/* <Test /> */}
     </>
   );
 }
