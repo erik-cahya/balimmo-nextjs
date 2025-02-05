@@ -2,13 +2,13 @@ import { notFound } from "next/navigation";
 import { CATALOGUE } from '@/constants/villa';
 import CatalogueClient from "./CatalogueClient";
 
-export function generateStaticParams() {
-  return CATALOGUE.map((item) => ({
-      slug: item.slug,
-  }));
-}
+export async function generateStaticParams() {
+    return CATALOGUE.map((item) => ({
+        slug: item.slug,
+    }));
+  }
 
-const CatalogueDetail = async ({ params }: { params: { slug: string } }) => {
+  const CatalogueDetail = ({ params }: { params: { slug: string } }) => {
     const { slug } = params;
 
     const catalogue = CATALOGUE.find((item) => item.slug === slug);
@@ -21,3 +21,4 @@ const CatalogueDetail = async ({ params }: { params: { slug: string } }) => {
 };
 
 export default CatalogueDetail;
+
