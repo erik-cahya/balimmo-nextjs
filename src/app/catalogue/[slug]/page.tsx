@@ -13,7 +13,7 @@ type Params = {
   slug: string;
 };
 
-const CatalogueDetail = ({ params }: { params: Params }) => {
+export default async function CatalogueDetail({ params }: { params: Params }) {
   const { slug } = params;
 
   const catalogue = CATALOGUE.find((item) => item.slug === slug);
@@ -24,5 +24,3 @@ const CatalogueDetail = ({ params }: { params: Params }) => {
 
   return <CatalogueClient catalogue={catalogue} />;
 };
-
-export default CatalogueDetail;
