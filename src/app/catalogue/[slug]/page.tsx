@@ -2,16 +2,18 @@ import { notFound } from "next/navigation";
 import { CATALOGUE } from '@/constants/villa';
 import CatalogueClient from "./CatalogueClient";
 
-// Ensure generateStaticParams returns a promise
+// Pastikan generateStaticParams mengembalikan array objek slug
 export async function generateStaticParams() {
-  return Promise.resolve(
-    CATALOGUE.map((item) => ({
-      slug: item.slug,
-    }))
-  );
+  return CATALOGUE.map((item) => ({
+    slug: item.slug,
+  }));
 }
 
-const CatalogueDetail = ({ params }: { params: { slug: string } }) => {
+type Params = {
+  slug: string;
+};
+
+const CatalogueDetail = ({ params }: { params: Params }) => {
   const { slug } = params;
 
   const catalogue = CATALOGUE.find((item) => item.slug === slug);
