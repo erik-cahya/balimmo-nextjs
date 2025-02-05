@@ -21,7 +21,7 @@ export default function Home() {
       <TerrainShowCase />
       <Articles />
       <Contact />
-      {/* <Test /> */}
+      <Test />
     </>
   );
 }
